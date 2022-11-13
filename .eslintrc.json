@@ -1,0 +1,24 @@
+{
+    "extends": "airbnb-base",
+    "env": {
+        "es6": true,
+        "browser": true,
+        "jest": true
+    },
+    "rules": {
+        "no-restricted-syntax": "warn",
+        "no-console": "warn",
+        "linebreak-style": "warn",
+        "import/no-extraneous-dependencies": "off",
+        "no-plusplus": "warn",
+        "no-param-reassign": "warn",
+        "guard-for-in": "warn",
+        "max-classes-per-file": "warn"
+    },
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 8,
+        "requireConfigFile": false
+    }
+}
