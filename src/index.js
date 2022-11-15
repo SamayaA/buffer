@@ -7,8 +7,10 @@ export class ArrayBufferConverter {
   // from code to char
   toString() {
     let resultStr = '';
-    for (let i = 0; i < this.buffer.byteLength; i += 1) {
+    let i = 0;
+    while (this.buffer[i]) {
       resultStr += String.fromCharCode(this.buffer[i]);
+      i++;
     }
     return resultStr;
   }
